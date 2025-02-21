@@ -7,9 +7,9 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class StudentDAO {
-    private static final String URL = "jdbc:mysql://localhost:3306/school";
+    private static final String URL = "jdbc:mysql://localhost:3306/school_db";
     private static final String USER = "root";
-    private static final String PASSWORD = "password";
+    private static final String PASSWORD = "";
 
     public void saveStudent(Student student) {
         String sql = "INSERT INTO students (email, password, birthday, new_student, favorite_color, terms) VALUES (?, ?, ?, ?, ?, ?)";
